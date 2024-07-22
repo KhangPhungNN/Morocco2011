@@ -7,10 +7,37 @@
 \usepackage{amsthm}
 \usepackage{nameref}
 \usepackage{amsmath}
+\usepackage{amsfonts}
 
 \begin{document}
 	\textbf{(Morocco 2011).} Cho tam giác ABC có $p$ là nửa chu vi, $S$ là diện tích. Chứng minh:
 \begin{center}
-		${\mathrm{cot}}^{2}A+{\mathrm{cot}}^{2}B+{\mathrm{cot}}^{2}C\ge 3\left(9\dfrac{{R}^{2}}{{p}^{2}}-1\right)$
+	${\mathrm{cot}}^{2}A+{\mathrm{cot}}^{2}B+{\mathrm{cot}}^{2}C\ge 3\left(9\dfrac{{R}^{2}}{{p}^{2}}-1\right)$
 \end{center}
+
+\textbf{\underline{Solutions}}\\
+
+Gọi $a,b,c$ lần lượt là cách cạnh $BC,CA,AB$.\\
+
+Ta viết lại điều cần chứng minh:
+\[{\mathrm{cot}}^{2}A+{\mathrm{cot}}^{2}B+{\mathrm{cot}}^{2}C+3\ge 27\dfrac{{R}^{2}}{{p}^{2}}\]
+
+
+Ta có: $VT={\mathrm{cot}}^{2}A+1+{\mathrm{cot}}^{2}B+1+{\mathrm{cot}}^{2}C+1=\dfrac{1}{{\mathrm{sin}}^{2}A}+\dfrac{1}{{\mathrm{sin}}^{2}B}+\dfrac{1}{{\mathrm{sin}}^{2}C}$\\
+
+
+Áp dụng liên tiếp bất đẳng thức Bunhiacopxki, Cauchy–Schwarz:
+\begin{eqnarray*}
+VT=\dfrac{1}{{\mathrm{sin}}^{2}A}+\dfrac{1}{{\mathrm{sin}}^{2}B}+\dfrac{1}{{\mathrm{sin}}^{2}C}\ge\dfrac{1}{3}{\left(\dfrac{1}{\mathrm{sin}A}+\dfrac{1}{\mathrm{sin}B}+\dfrac{1}{\mathrm{sin}C}\right)}^{2}&\ge&\dfrac{1}{3}\bigg{[\dfrac{{\left(1+1+1\right)}^{2}}{\mathrm{sin}A+\mathrm{sin}B+\mathrm{sin}C}\bigg]}^{2}\\
+&=&27{\left(\dfrac{1}{\mathrm{sin}A+\mathrm{sin}B+\mathrm{sin}C}\right)}^{2} {(1)}
+\end{eqnarray*}
+
+Theo định lý $\sin$ và tính chất dãy tỉ số bằng nhau, ta có:
+\begin{eqnarray*}
+\dfrac{a}{\mathrm{sin}A}=\dfrac{b}{\mathrm{sin}B}=\dfrac{c}{\mathrm{sin}C}=2R&=&\dfrac{a+b+c}{\mathrm{sin}A+\mathrm{sin}B+\mathrm{sin}C}\\
+\Rightarrow{R}&=&\dfrac{\dfrac{a+b+c}{2}}{\mathrm{sin}A+\mathrm{sin}B+\mathrm{sin}C}=\dfrac{p}{\mathrm{sin}A+\mathrm{sin}B+\mathrm{sin}C}\\
+\Rightarrow\dfrac{R}{p}&=&\dfrac{1}{\mathrm{sin}A+\mathrm{sin}B+\mathrm{sin}C}
+\end{eqnarray*}
+
+Thay vào (1), ta có ngay điều cần chứng minh
 \end{document}
